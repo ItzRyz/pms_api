@@ -1,7 +1,10 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/server.php", "use": "vercel-php@0.7.3" }
+        {
+            "src": "server.php",
+            "use": "@vercel/php"
+        }
     ],
     "routes": [
         {
@@ -21,8 +24,6 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "SSR_TEMP_PATH": "/tmp/ssr",
-        "NODE_PATH": "node",
-        "PHP_EXTENSION_PGSQL": "1",
-        "PHP_EXTENSION_PDO_PGSQL": "1"
+        "NODE_PATH": "node"
     }
 }
