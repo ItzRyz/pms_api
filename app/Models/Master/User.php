@@ -11,11 +11,13 @@ class User extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table = "msuser";
     protected $fillable = [
         "name",
         "email",
         "password",
         "company",
-        "isactive"
+        "isactive",
+        "isadmin"
     ];
 }
